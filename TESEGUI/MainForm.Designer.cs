@@ -39,6 +39,7 @@
             TrackingButton = new Button();
             label1 = new Label();
             ExportButton = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // PlayerButton
@@ -143,18 +144,31 @@
             // 
             // ExportButton
             // 
-            ExportButton.Location = new Point(11, 5);
+            ExportButton.Location = new Point(12, 211);
             ExportButton.Name = "ExportButton";
             ExportButton.Size = new Size(75, 23);
             ExportButton.TabIndex = 10;
             ExportButton.Text = "Export";
             ExportButton.UseVisualStyleBackColor = true;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Checked = true;
+            checkBox1.CheckState = CheckState.Checked;
+            checkBox1.Location = new Point(265, 214);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(208, 19);
+            checkBox1.TabIndex = 12;
+            checkBox1.Text = "Show position values in tile format";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 216);
+            ClientSize = new Size(484, 241);
+            Controls.Add(checkBox1);
             Controls.Add(ExportButton);
             Controls.Add(label1);
             Controls.Add(TrackingButton);
@@ -168,7 +182,7 @@
             Controls.Add(PlayerButton);
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "The Escapists Save Editor GUI";
+            Text = "The Escapists Save Editor";
             Load += MainForm_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -187,5 +201,6 @@
         private Button TrackingButton;
         private Label label1;
         private Button ExportButton;
+        private CheckBox checkBox1;
     }
 }
