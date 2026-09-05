@@ -43,10 +43,12 @@
             label6 = new Label();
             CharacterButton = new Button();
             ShopButton = new Button();
-            button1 = new Button();
+            InventoryButton = new Button();
             BackButton = new Button();
             SaveButton = new Button();
             label7 = new Label();
+            PlusButton = new Button();
+            MinusButton = new Button();
             SuspendLayout();
             // 
             // InmatesListBox
@@ -54,7 +56,7 @@
             InmatesListBox.FormattingEnabled = true;
             InmatesListBox.Location = new Point(402, 6);
             InmatesListBox.Name = "InmatesListBox";
-            InmatesListBox.Size = new Size(120, 154);
+            InmatesListBox.Size = new Size(120, 139);
             InmatesListBox.TabIndex = 0;
             // 
             // label1
@@ -175,14 +177,14 @@
             ShopButton.Text = "Shop";
             ShopButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // InventoryButton
             // 
-            button1.Location = new Point(12, 114);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 15;
-            button1.Text = "Inventory";
-            button1.UseVisualStyleBackColor = true;
+            InventoryButton.Location = new Point(12, 114);
+            InventoryButton.Name = "InventoryButton";
+            InventoryButton.Size = new Size(75, 23);
+            InventoryButton.TabIndex = 15;
+            InventoryButton.Text = "Inventory";
+            InventoryButton.UseVisualStyleBackColor = true;
             // 
             // BackButton
             // 
@@ -213,15 +215,35 @@
             label7.TabIndex = 18;
             label7.Text = "**Saving affects all edited inmates and not just the one being edited currently.";
             // 
+            // PlusButton
+            // 
+            PlusButton.Location = new Point(503, 145);
+            PlusButton.Name = "PlusButton";
+            PlusButton.Size = new Size(20, 20);
+            PlusButton.TabIndex = 19;
+            PlusButton.Text = "+";
+            PlusButton.UseVisualStyleBackColor = true;
+            // 
+            // MinusButton
+            // 
+            MinusButton.Location = new Point(402, 145);
+            MinusButton.Name = "MinusButton";
+            MinusButton.Size = new Size(20, 20);
+            MinusButton.TabIndex = 20;
+            MinusButton.Text = "-";
+            MinusButton.UseVisualStyleBackColor = true;
+            // 
             // InmatesForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(534, 211);
+            Controls.Add(MinusButton);
+            Controls.Add(PlusButton);
             Controls.Add(label7);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
-            Controls.Add(button1);
+            Controls.Add(InventoryButton);
             Controls.Add(ShopButton);
             Controls.Add(CharacterButton);
             Controls.Add(label6);
@@ -260,9 +282,11 @@
         private Label label6;
         private Button CharacterButton;
         private Button ShopButton;
-        private Button button1;
+        private Button InventoryButton;
         private Button BackButton;
         private Button SaveButton;
         private Label label7;
+        private Button PlusButton;
+        private Button MinusButton;
     }
 }

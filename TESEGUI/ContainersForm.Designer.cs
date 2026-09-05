@@ -117,6 +117,8 @@
             PositionXTextBox = new TextBox();
             label1 = new Label();
             ContainerListBox = new ListBox();
+            PlusButton = new Button();
+            MinusButton = new Button();
             SuspendLayout();
             // 
             // SaveButton
@@ -832,14 +834,34 @@
             ContainerListBox.FormattingEnabled = true;
             ContainerListBox.Location = new Point(481, 12);
             ContainerListBox.Name = "ContainerListBox";
-            ContainerListBox.Size = new Size(120, 124);
+            ContainerListBox.Size = new Size(120, 109);
             ContainerListBox.TabIndex = 136;
+            // 
+            // PlusButton
+            // 
+            PlusButton.Location = new Point(582, 121);
+            PlusButton.Name = "PlusButton";
+            PlusButton.Size = new Size(20, 20);
+            PlusButton.TabIndex = 225;
+            PlusButton.Text = "+";
+            PlusButton.UseVisualStyleBackColor = true;
+            // 
+            // MinusButton
+            // 
+            MinusButton.Location = new Point(480, 121);
+            MinusButton.Name = "MinusButton";
+            MinusButton.Size = new Size(20, 20);
+            MinusButton.TabIndex = 226;
+            MinusButton.Text = "-";
+            MinusButton.UseVisualStyleBackColor = true;
             // 
             // ContainersForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(614, 401);
+            Controls.Add(MinusButton);
+            Controls.Add(PlusButton);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
             Controls.Add(Durability20TextBox);
@@ -1027,5 +1049,7 @@
         private TextBox PositionXTextBox;
         private Label label1;
         private ListBox ContainerListBox;
+        private Button PlusButton;
+        private Button MinusButton;
     }
 }

@@ -42,6 +42,8 @@
             label21 = new Label();
             BackButton = new Button();
             SaveButton = new Button();
+            PlusButton = new Button();
+            MinusButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -135,7 +137,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(323, 169);
+            label21.Location = new Point(323, 191);
             label21.Name = "label21";
             label21.Size = new Size(162, 15);
             label21.TabIndex = 67;
@@ -144,7 +146,7 @@
             // BackButton
             // 
             BackButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BackButton.Location = new Point(12, 156);
+            BackButton.Location = new Point(12, 180);
             BackButton.Name = "BackButton";
             BackButton.Size = new Size(75, 23);
             BackButton.TabIndex = 68;
@@ -154,18 +156,38 @@
             // SaveButton
             // 
             SaveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaveButton.Location = new Point(93, 156);
+            SaveButton.Location = new Point(93, 180);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
             SaveButton.TabIndex = 69;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
             // 
+            // PlusButton
+            // 
+            PlusButton.Location = new Point(466, 166);
+            PlusButton.Name = "PlusButton";
+            PlusButton.Size = new Size(20, 20);
+            PlusButton.TabIndex = 70;
+            PlusButton.Text = "+";
+            PlusButton.UseVisualStyleBackColor = true;
+            // 
+            // MinusButton
+            // 
+            MinusButton.Location = new Point(364, 166);
+            MinusButton.Name = "MinusButton";
+            MinusButton.Size = new Size(20, 20);
+            MinusButton.TabIndex = 71;
+            MinusButton.Text = "-";
+            MinusButton.UseVisualStyleBackColor = true;
+            // 
             // FloorItemsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(497, 191);
+            ClientSize = new Size(497, 215);
+            Controls.Add(MinusButton);
+            Controls.Add(PlusButton);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
             Controls.Add(label21);
@@ -203,5 +225,7 @@
         private Label label21;
         private Button BackButton;
         private Button SaveButton;
+        private Button PlusButton;
+        private Button MinusButton;
     }
 }

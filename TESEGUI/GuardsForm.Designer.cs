@@ -31,7 +31,7 @@
             label7 = new Label();
             SaveButton = new Button();
             BackButton = new Button();
-            button1 = new Button();
+            InventoryButton = new Button();
             CharacterButton = new Button();
             label6 = new Label();
             checkBox1 = new CheckBox();
@@ -52,6 +52,8 @@
             Patrol3TextBox = new TextBox();
             Patrol4TextBox = new TextBox();
             Patrol5TextBox = new TextBox();
+            PlusButton = new Button();
+            MinusButton = new Button();
             SuspendLayout();
             // 
             // label7
@@ -83,14 +85,14 @@
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // InventoryButton
             // 
-            button1.Location = new Point(12, 142);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 34;
-            button1.Text = "Inventory";
-            button1.UseVisualStyleBackColor = true;
+            InventoryButton.Location = new Point(12, 142);
+            InventoryButton.Name = "InventoryButton";
+            InventoryButton.Size = new Size(75, 23);
+            InventoryButton.TabIndex = 34;
+            InventoryButton.Text = "Inventory";
+            InventoryButton.UseVisualStyleBackColor = true;
             // 
             // CharacterButton
             // 
@@ -206,7 +208,7 @@
             GuardsListBox.FormattingEnabled = true;
             GuardsListBox.Location = new Point(402, 7);
             GuardsListBox.Name = "GuardsListBox";
-            GuardsListBox.Size = new Size(120, 184);
+            GuardsListBox.Size = new Size(120, 169);
             GuardsListBox.TabIndex = 19;
             // 
             // label8
@@ -253,11 +255,31 @@
             Patrol5TextBox.Size = new Size(50, 23);
             Patrol5TextBox.TabIndex = 43;
             // 
+            // PlusButton
+            // 
+            PlusButton.Location = new Point(503, 176);
+            PlusButton.Name = "PlusButton";
+            PlusButton.Size = new Size(20, 20);
+            PlusButton.TabIndex = 44;
+            PlusButton.Text = "+";
+            PlusButton.UseVisualStyleBackColor = true;
+            // 
+            // MinusButton
+            // 
+            MinusButton.Location = new Point(401, 176);
+            MinusButton.Name = "MinusButton";
+            MinusButton.Size = new Size(20, 20);
+            MinusButton.TabIndex = 45;
+            MinusButton.Text = "-";
+            MinusButton.UseVisualStyleBackColor = true;
+            // 
             // GuardsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(534, 236);
+            Controls.Add(MinusButton);
+            Controls.Add(PlusButton);
             Controls.Add(Patrol5TextBox);
             Controls.Add(Patrol4TextBox);
             Controls.Add(Patrol3TextBox);
@@ -267,7 +289,7 @@
             Controls.Add(label7);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
-            Controls.Add(button1);
+            Controls.Add(InventoryButton);
             Controls.Add(CharacterButton);
             Controls.Add(label6);
             Controls.Add(checkBox1);
@@ -294,7 +316,7 @@
         private Label label7;
         private Button SaveButton;
         private Button BackButton;
-        private Button button1;
+        private Button InventoryButton;
         private Button CharacterButton;
         private Label label6;
         private CheckBox checkBox1;
@@ -315,5 +337,7 @@
         private TextBox Patrol3TextBox;
         private TextBox Patrol4TextBox;
         private TextBox Patrol5TextBox;
+        private Button PlusButton;
+        private Button MinusButton;
     }
 }

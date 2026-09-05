@@ -117,6 +117,8 @@
             label43 = new Label();
             BackButton = new Button();
             SaveButton = new Button();
+            MinusButton = new Button();
+            PlusButton = new Button();
             SuspendLayout();
             // 
             // DeskListBox
@@ -124,7 +126,7 @@
             DeskListBox.FormattingEnabled = true;
             DeskListBox.Location = new Point(482, 12);
             DeskListBox.Name = "DeskListBox";
-            DeskListBox.Size = new Size(120, 124);
+            DeskListBox.Size = new Size(120, 109);
             DeskListBox.TabIndex = 0;
             // 
             // label1
@@ -835,11 +837,31 @@
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
             // 
+            // MinusButton
+            // 
+            MinusButton.Location = new Point(481, 121);
+            MinusButton.Name = "MinusButton";
+            MinusButton.Size = new Size(20, 20);
+            MinusButton.TabIndex = 228;
+            MinusButton.Text = "-";
+            MinusButton.UseVisualStyleBackColor = true;
+            // 
+            // PlusButton
+            // 
+            PlusButton.Location = new Point(583, 121);
+            PlusButton.Name = "PlusButton";
+            PlusButton.Size = new Size(20, 20);
+            PlusButton.TabIndex = 227;
+            PlusButton.Text = "+";
+            PlusButton.UseVisualStyleBackColor = true;
+            // 
             // DesksForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(614, 401);
+            Controls.Add(MinusButton);
+            Controls.Add(PlusButton);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
             Controls.Add(Durability20TextBox);
@@ -1027,5 +1049,7 @@
         private Label label43;
         private Button BackButton;
         private Button SaveButton;
+        private Button MinusButton;
+        private Button PlusButton;
     }
 }

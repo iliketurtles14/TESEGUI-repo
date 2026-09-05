@@ -127,6 +127,32 @@
             label35 = new Label();
             BackButton = new Button();
             SaveButton = new Button();
+            MinesAddButton = new Button();
+            MinesMinusButton = new Button();
+            DugSoilMinusButton = new Button();
+            DugSoilPlusButton = new Button();
+            RocksMinusButton = new Button();
+            RocksPlusButton = new Button();
+            HolesMinusButton = new Button();
+            HolesPlusButton = new Button();
+            BracesMinusButton = new Button();
+            BracesPlusButton = new Button();
+            AlertsMinusButton = new Button();
+            AlertsPlusButton = new Button();
+            CurtainsMinusButton = new Button();
+            CurtainsPlusButton = new Button();
+            StashesMinusButton = new Button();
+            StashesPlusButton = new Button();
+            RemovedMinusButton = new Button();
+            RemovedPlusButton = new Button();
+            WallsMinusButton = new Button();
+            WallsPlusButton = new Button();
+            SlatsMinusButton = new Button();
+            SlatsPlusButton = new Button();
+            VentMinusButton = new Button();
+            VentPlusButton = new Button();
+            label36 = new Label();
+            label37 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -208,7 +234,9 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(MinesMinusButton);
             groupBox1.Controls.Add(MinesPositionYTextBox);
+            groupBox1.Controls.Add(MinesAddButton);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(MinesPositionXTextBox);
             groupBox1.Controls.Add(label3);
@@ -257,11 +285,13 @@
             MinesListBox.FormattingEnabled = true;
             MinesListBox.Location = new Point(144, 22);
             MinesListBox.Name = "MinesListBox";
-            MinesListBox.Size = new Size(40, 79);
+            MinesListBox.Size = new Size(40, 64);
             MinesListBox.TabIndex = 0;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(DugSoilMinusButton);
+            groupBox2.Controls.Add(DugSoilPlusButton);
             groupBox2.Controls.Add(DugSoilPositionYTextBox);
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(DugSoilPositionXTextBox);
@@ -311,11 +341,13 @@
             DugSoilListBox.FormattingEnabled = true;
             DugSoilListBox.Location = new Point(144, 22);
             DugSoilListBox.Name = "DugSoilListBox";
-            DugSoilListBox.Size = new Size(40, 79);
+            DugSoilListBox.Size = new Size(40, 64);
             DugSoilListBox.TabIndex = 0;
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(RocksMinusButton);
+            groupBox3.Controls.Add(RocksPlusButton);
             groupBox3.Controls.Add(RocksDurabilityTextBox);
             groupBox3.Controls.Add(label9);
             groupBox3.Controls.Add(RocksPositionYTextBox);
@@ -383,11 +415,13 @@
             RocksListBox.FormattingEnabled = true;
             RocksListBox.Location = new Point(144, 22);
             RocksListBox.Name = "RocksListBox";
-            RocksListBox.Size = new Size(40, 79);
+            RocksListBox.Size = new Size(40, 64);
             RocksListBox.TabIndex = 0;
             // 
             // groupBox4
             // 
+            groupBox4.Controls.Add(HolesMinusButton);
+            groupBox4.Controls.Add(HolesPlusButton);
             groupBox4.Controls.Add(HolesDurabilityTextBox);
             groupBox4.Controls.Add(label10);
             groupBox4.Controls.Add(HolesPositionYTextBox);
@@ -455,11 +489,13 @@
             HolesListBox.FormattingEnabled = true;
             HolesListBox.Location = new Point(144, 22);
             HolesListBox.Name = "HolesListBox";
-            HolesListBox.Size = new Size(40, 79);
+            HolesListBox.Size = new Size(40, 64);
             HolesListBox.TabIndex = 0;
             // 
             // groupBox5
             // 
+            groupBox5.Controls.Add(BracesMinusButton);
+            groupBox5.Controls.Add(BracesPlusButton);
             groupBox5.Controls.Add(BracesPositionYTextBox);
             groupBox5.Controls.Add(label13);
             groupBox5.Controls.Add(BracesPositionXTextBox);
@@ -509,11 +545,13 @@
             BracesListBox.FormattingEnabled = true;
             BracesListBox.Location = new Point(144, 22);
             BracesListBox.Name = "BracesListBox";
-            BracesListBox.Size = new Size(40, 79);
+            BracesListBox.Size = new Size(40, 64);
             BracesListBox.TabIndex = 0;
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(AlertsMinusButton);
+            groupBox6.Controls.Add(AlertsPlusButton);
             groupBox6.Controls.Add(textBox2);
             groupBox6.Controls.Add(label18);
             groupBox6.Controls.Add(AlertsPositionYTextBox);
@@ -530,9 +568,9 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(47, 73);
+            textBox2.Location = new Point(52, 73);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(91, 23);
+            textBox2.Size = new Size(86, 23);
             textBox2.TabIndex = 8;
             // 
             // label18
@@ -540,9 +578,9 @@
             label18.AutoSize = true;
             label18.Location = new Point(6, 76);
             label18.Name = "label18";
-            label18.Size = new Size(35, 15);
+            label18.Size = new Size(40, 15);
             label18.TabIndex = 7;
-            label18.Text = "Type:";
+            label18.Text = "Type*:";
             // 
             // AlertsPositionYTextBox
             // 
@@ -581,11 +619,13 @@
             AlertsListBox.FormattingEnabled = true;
             AlertsListBox.Location = new Point(144, 22);
             AlertsListBox.Name = "AlertsListBox";
-            AlertsListBox.Size = new Size(40, 79);
+            AlertsListBox.Size = new Size(40, 64);
             AlertsListBox.TabIndex = 0;
             // 
             // groupBox7
             // 
+            groupBox7.Controls.Add(CurtainsMinusButton);
+            groupBox7.Controls.Add(CurtainsPlusButton);
             groupBox7.Controls.Add(CurtainsTypeTextBox);
             groupBox7.Controls.Add(label19);
             groupBox7.Controls.Add(CurtainsPositionYTextBox);
@@ -602,7 +642,7 @@
             // 
             // CurtainsTypeTextBox
             // 
-            CurtainsTypeTextBox.Location = new Point(47, 73);
+            CurtainsTypeTextBox.Location = new Point(57, 73);
             CurtainsTypeTextBox.Name = "CurtainsTypeTextBox";
             CurtainsTypeTextBox.Size = new Size(50, 23);
             CurtainsTypeTextBox.TabIndex = 6;
@@ -612,9 +652,9 @@
             label19.AutoSize = true;
             label19.Location = new Point(6, 76);
             label19.Name = "label19";
-            label19.Size = new Size(35, 15);
+            label19.Size = new Size(45, 15);
             label19.TabIndex = 5;
-            label19.Text = "Type:";
+            label19.Text = "Type**:";
             // 
             // CurtainsPositionYTextBox
             // 
@@ -653,11 +693,13 @@
             CurtainsListBox.FormattingEnabled = true;
             CurtainsListBox.Location = new Point(144, 22);
             CurtainsListBox.Name = "CurtainsListBox";
-            CurtainsListBox.Size = new Size(40, 79);
+            CurtainsListBox.Size = new Size(40, 64);
             CurtainsListBox.TabIndex = 0;
             // 
             // groupBox8
             // 
+            groupBox8.Controls.Add(StashesMinusButton);
+            groupBox8.Controls.Add(StashesPlusButton);
             groupBox8.Controls.Add(StashesLayerTextBox);
             groupBox8.Controls.Add(label22);
             groupBox8.Controls.Add(StashesPositionYTextBox);
@@ -674,7 +716,7 @@
             // 
             // StashesLayerTextBox
             // 
-            StashesLayerTextBox.Location = new Point(55, 73);
+            StashesLayerTextBox.Location = new Point(65, 73);
             StashesLayerTextBox.Name = "StashesLayerTextBox";
             StashesLayerTextBox.Size = new Size(50, 23);
             StashesLayerTextBox.TabIndex = 6;
@@ -684,9 +726,9 @@
             label22.AutoSize = true;
             label22.Location = new Point(6, 76);
             label22.Name = "label22";
-            label22.Size = new Size(43, 15);
+            label22.Size = new Size(53, 15);
             label22.TabIndex = 5;
-            label22.Text = "Layer*:";
+            label22.Text = "Layer***:";
             // 
             // StashesPositionYTextBox
             // 
@@ -725,11 +767,13 @@
             StashesListBox.FormattingEnabled = true;
             StashesListBox.Location = new Point(144, 22);
             StashesListBox.Name = "StashesListBox";
-            StashesListBox.Size = new Size(40, 79);
+            StashesListBox.Size = new Size(40, 64);
             StashesListBox.TabIndex = 0;
             // 
             // groupBox9
             // 
+            groupBox9.Controls.Add(VentMinusButton);
+            groupBox9.Controls.Add(VentPlusButton);
             groupBox9.Controls.Add(VentFakeCheckBox);
             groupBox9.Controls.Add(VentDurabilityTextBox);
             groupBox9.Controls.Add(label26);
@@ -809,11 +853,13 @@
             VentListBox.FormattingEnabled = true;
             VentListBox.Location = new Point(144, 22);
             VentListBox.Name = "VentListBox";
-            VentListBox.Size = new Size(40, 94);
+            VentListBox.Size = new Size(40, 79);
             VentListBox.TabIndex = 0;
             // 
             // groupBox10
             // 
+            groupBox10.Controls.Add(SlatsMinusButton);
+            groupBox10.Controls.Add(SlatsPlusButton);
             groupBox10.Controls.Add(SlatsDurabilityTextBox);
             groupBox10.Controls.Add(label17);
             groupBox10.Controls.Add(SlatsPositionYTextBox);
@@ -881,11 +927,13 @@
             SlatsListBox.FormattingEnabled = true;
             SlatsListBox.Location = new Point(144, 22);
             SlatsListBox.Name = "SlatsListBox";
-            SlatsListBox.Size = new Size(40, 79);
+            SlatsListBox.Size = new Size(40, 64);
             SlatsListBox.TabIndex = 0;
             // 
             // groupBox11
             // 
+            groupBox11.Controls.Add(WallsMinusButton);
+            groupBox11.Controls.Add(WallsPlusButton);
             groupBox11.Controls.Add(WallsDurabilityTextBox);
             groupBox11.Controls.Add(label30);
             groupBox11.Controls.Add(WallsPositionYTextBox);
@@ -953,11 +1001,13 @@
             WallsListBox.FormattingEnabled = true;
             WallsListBox.Location = new Point(144, 22);
             WallsListBox.Name = "WallsListBox";
-            WallsListBox.Size = new Size(40, 79);
+            WallsListBox.Size = new Size(40, 64);
             WallsListBox.TabIndex = 0;
             // 
             // groupBox12
             // 
+            groupBox12.Controls.Add(RemovedMinusButton);
+            groupBox12.Controls.Add(RemovedPlusButton);
             groupBox12.Controls.Add(RemovedPositionYTextBox);
             groupBox12.Controls.Add(label33);
             groupBox12.Controls.Add(RemovedPositionXTextBox);
@@ -1007,17 +1057,17 @@
             RemovedListBox.FormattingEnabled = true;
             RemovedListBox.Location = new Point(144, 22);
             RemovedListBox.Name = "RemovedListBox";
-            RemovedListBox.Size = new Size(40, 79);
+            RemovedListBox.Size = new Size(40, 64);
             RemovedListBox.TabIndex = 0;
             // 
             // label35
             // 
             label35.AutoSize = true;
-            label35.Location = new Point(500, 517);
+            label35.Location = new Point(490, 517);
             label35.Name = "label35";
-            label35.Size = new Size(292, 15);
+            label35.Size = new Size(302, 15);
             label35.TabIndex = 14;
-            label35.Text = "*1: Underground; 2: Ground; 3: Lights; 4: Vents; 5: Roof";
+            label35.Text = "***1: Underground; 2: Ground; 3: Lights; 4: Vents; 5: Roof";
             // 
             // BackButton
             // 
@@ -1039,11 +1089,259 @@
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
             // 
+            // MinesAddButton
+            // 
+            MinesAddButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MinesAddButton.Location = new Point(165, 86);
+            MinesAddButton.Name = "MinesAddButton";
+            MinesAddButton.Size = new Size(20, 20);
+            MinesAddButton.TabIndex = 17;
+            MinesAddButton.Text = "+";
+            MinesAddButton.UseVisualStyleBackColor = true;
+            // 
+            // MinesMinusButton
+            // 
+            MinesMinusButton.Location = new Point(143, 86);
+            MinesMinusButton.Name = "MinesMinusButton";
+            MinesMinusButton.Size = new Size(20, 20);
+            MinesMinusButton.TabIndex = 18;
+            MinesMinusButton.Text = "-";
+            MinesMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // DugSoilMinusButton
+            // 
+            DugSoilMinusButton.Location = new Point(143, 86);
+            DugSoilMinusButton.Name = "DugSoilMinusButton";
+            DugSoilMinusButton.Size = new Size(20, 20);
+            DugSoilMinusButton.TabIndex = 20;
+            DugSoilMinusButton.Text = "-";
+            DugSoilMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // DugSoilPlusButton
+            // 
+            DugSoilPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DugSoilPlusButton.Location = new Point(165, 86);
+            DugSoilPlusButton.Name = "DugSoilPlusButton";
+            DugSoilPlusButton.Size = new Size(20, 20);
+            DugSoilPlusButton.TabIndex = 19;
+            DugSoilPlusButton.Text = "+";
+            DugSoilPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // RocksMinusButton
+            // 
+            RocksMinusButton.Location = new Point(143, 86);
+            RocksMinusButton.Name = "RocksMinusButton";
+            RocksMinusButton.Size = new Size(20, 20);
+            RocksMinusButton.TabIndex = 22;
+            RocksMinusButton.Text = "-";
+            RocksMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // RocksPlusButton
+            // 
+            RocksPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RocksPlusButton.Location = new Point(165, 86);
+            RocksPlusButton.Name = "RocksPlusButton";
+            RocksPlusButton.Size = new Size(20, 20);
+            RocksPlusButton.TabIndex = 21;
+            RocksPlusButton.Text = "+";
+            RocksPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // HolesMinusButton
+            // 
+            HolesMinusButton.Location = new Point(143, 86);
+            HolesMinusButton.Name = "HolesMinusButton";
+            HolesMinusButton.Size = new Size(20, 20);
+            HolesMinusButton.TabIndex = 24;
+            HolesMinusButton.Text = "-";
+            HolesMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // HolesPlusButton
+            // 
+            HolesPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            HolesPlusButton.Location = new Point(165, 86);
+            HolesPlusButton.Name = "HolesPlusButton";
+            HolesPlusButton.Size = new Size(20, 20);
+            HolesPlusButton.TabIndex = 23;
+            HolesPlusButton.Text = "+";
+            HolesPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // BracesMinusButton
+            // 
+            BracesMinusButton.Location = new Point(143, 86);
+            BracesMinusButton.Name = "BracesMinusButton";
+            BracesMinusButton.Size = new Size(20, 20);
+            BracesMinusButton.TabIndex = 24;
+            BracesMinusButton.Text = "-";
+            BracesMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // BracesPlusButton
+            // 
+            BracesPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BracesPlusButton.Location = new Point(165, 86);
+            BracesPlusButton.Name = "BracesPlusButton";
+            BracesPlusButton.Size = new Size(20, 20);
+            BracesPlusButton.TabIndex = 23;
+            BracesPlusButton.Text = "+";
+            BracesPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // AlertsMinusButton
+            // 
+            AlertsMinusButton.Location = new Point(143, 86);
+            AlertsMinusButton.Name = "AlertsMinusButton";
+            AlertsMinusButton.Size = new Size(20, 20);
+            AlertsMinusButton.TabIndex = 26;
+            AlertsMinusButton.Text = "-";
+            AlertsMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // AlertsPlusButton
+            // 
+            AlertsPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AlertsPlusButton.Location = new Point(165, 86);
+            AlertsPlusButton.Name = "AlertsPlusButton";
+            AlertsPlusButton.Size = new Size(20, 20);
+            AlertsPlusButton.TabIndex = 25;
+            AlertsPlusButton.Text = "+";
+            AlertsPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // CurtainsMinusButton
+            // 
+            CurtainsMinusButton.Location = new Point(143, 86);
+            CurtainsMinusButton.Name = "CurtainsMinusButton";
+            CurtainsMinusButton.Size = new Size(20, 20);
+            CurtainsMinusButton.TabIndex = 28;
+            CurtainsMinusButton.Text = "-";
+            CurtainsMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // CurtainsPlusButton
+            // 
+            CurtainsPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CurtainsPlusButton.Location = new Point(165, 86);
+            CurtainsPlusButton.Name = "CurtainsPlusButton";
+            CurtainsPlusButton.Size = new Size(20, 20);
+            CurtainsPlusButton.TabIndex = 27;
+            CurtainsPlusButton.Text = "+";
+            CurtainsPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // StashesMinusButton
+            // 
+            StashesMinusButton.Location = new Point(143, 86);
+            StashesMinusButton.Name = "StashesMinusButton";
+            StashesMinusButton.Size = new Size(20, 20);
+            StashesMinusButton.TabIndex = 30;
+            StashesMinusButton.Text = "-";
+            StashesMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // StashesPlusButton
+            // 
+            StashesPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            StashesPlusButton.Location = new Point(165, 86);
+            StashesPlusButton.Name = "StashesPlusButton";
+            StashesPlusButton.Size = new Size(20, 20);
+            StashesPlusButton.TabIndex = 29;
+            StashesPlusButton.Text = "+";
+            StashesPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // RemovedMinusButton
+            // 
+            RemovedMinusButton.Location = new Point(143, 86);
+            RemovedMinusButton.Name = "RemovedMinusButton";
+            RemovedMinusButton.Size = new Size(20, 20);
+            RemovedMinusButton.TabIndex = 32;
+            RemovedMinusButton.Text = "-";
+            RemovedMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // RemovedPlusButton
+            // 
+            RemovedPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RemovedPlusButton.Location = new Point(165, 86);
+            RemovedPlusButton.Name = "RemovedPlusButton";
+            RemovedPlusButton.Size = new Size(20, 20);
+            RemovedPlusButton.TabIndex = 31;
+            RemovedPlusButton.Text = "+";
+            RemovedPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // WallsMinusButton
+            // 
+            WallsMinusButton.Location = new Point(144, 86);
+            WallsMinusButton.Name = "WallsMinusButton";
+            WallsMinusButton.Size = new Size(20, 20);
+            WallsMinusButton.TabIndex = 34;
+            WallsMinusButton.Text = "-";
+            WallsMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // WallsPlusButton
+            // 
+            WallsPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            WallsPlusButton.Location = new Point(166, 86);
+            WallsPlusButton.Name = "WallsPlusButton";
+            WallsPlusButton.Size = new Size(20, 20);
+            WallsPlusButton.TabIndex = 33;
+            WallsPlusButton.Text = "+";
+            WallsPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // SlatsMinusButton
+            // 
+            SlatsMinusButton.Location = new Point(143, 86);
+            SlatsMinusButton.Name = "SlatsMinusButton";
+            SlatsMinusButton.Size = new Size(20, 20);
+            SlatsMinusButton.TabIndex = 36;
+            SlatsMinusButton.Text = "-";
+            SlatsMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // SlatsPlusButton
+            // 
+            SlatsPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SlatsPlusButton.Location = new Point(165, 86);
+            SlatsPlusButton.Name = "SlatsPlusButton";
+            SlatsPlusButton.Size = new Size(20, 20);
+            SlatsPlusButton.TabIndex = 35;
+            SlatsPlusButton.Text = "+";
+            SlatsPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // VentMinusButton
+            // 
+            VentMinusButton.Location = new Point(143, 101);
+            VentMinusButton.Name = "VentMinusButton";
+            VentMinusButton.Size = new Size(20, 20);
+            VentMinusButton.TabIndex = 38;
+            VentMinusButton.Text = "-";
+            VentMinusButton.UseVisualStyleBackColor = true;
+            // 
+            // VentPlusButton
+            // 
+            VentPlusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            VentPlusButton.Location = new Point(165, 101);
+            VentPlusButton.Name = "VentPlusButton";
+            VentPlusButton.Size = new Size(20, 20);
+            VentPlusButton.TabIndex = 37;
+            VentPlusButton.Text = "+";
+            VentPlusButton.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(406, 487);
+            label36.Name = "label36";
+            label36.Size = new Size(386, 15);
+            label36.TabIndex = 17;
+            label36.Text = "*CutFence, CutFenceUG, CutFenceRoof, CutBars, OpenVent, BrokenWall";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(673, 502);
+            label37.Name = "label37";
+            label37.Size = new Size(119, 15);
+            label37.TabIndex = 18;
+            label37.Text = "**0: Curtain; 1: Poster";
+            // 
             // PrisonForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 541);
+            Controls.Add(label37);
+            Controls.Add(label36);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
             Controls.Add(label35);
@@ -1199,5 +1497,31 @@
         private Label label35;
         private Button BackButton;
         private Button SaveButton;
+        private Button MinesMinusButton;
+        private Button MinesAddButton;
+        private Button DugSoilMinusButton;
+        private Button DugSoilPlusButton;
+        private Button RocksMinusButton;
+        private Button RocksPlusButton;
+        private Button HolesMinusButton;
+        private Button HolesPlusButton;
+        private Button BracesMinusButton;
+        private Button BracesPlusButton;
+        private Button AlertsMinusButton;
+        private Button AlertsPlusButton;
+        private Button CurtainsMinusButton;
+        private Button CurtainsPlusButton;
+        private Button StashesMinusButton;
+        private Button StashesPlusButton;
+        private Button VentMinusButton;
+        private Button VentPlusButton;
+        private Button SlatsMinusButton;
+        private Button SlatsPlusButton;
+        private Button WallsMinusButton;
+        private Button WallsPlusButton;
+        private Button RemovedMinusButton;
+        private Button RemovedPlusButton;
+        private Label label36;
+        private Label label37;
     }
 }
