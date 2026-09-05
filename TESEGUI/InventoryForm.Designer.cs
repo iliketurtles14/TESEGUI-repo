@@ -379,6 +379,7 @@
             Controls.Add(label2);
             Controls.Add(Item1TextBox);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "InventoryForm";
             Text = "Edit Inventory";
             ResumeLayout(false);
