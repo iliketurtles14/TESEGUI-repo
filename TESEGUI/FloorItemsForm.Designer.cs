@@ -133,6 +133,7 @@
             ItemListBox.Name = "ItemListBox";
             ItemListBox.Size = new Size(120, 154);
             ItemListBox.TabIndex = 10;
+            ItemListBox.SelectedIndexChanged += ItemListBox_SelectedIndexChanged;
             // 
             // label21
             // 
@@ -152,6 +153,7 @@
             BackButton.TabIndex = 68;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -162,6 +164,7 @@
             SaveButton.TabIndex = 69;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // PlusButton
             // 
@@ -171,6 +174,7 @@
             PlusButton.TabIndex = 70;
             PlusButton.Text = "+";
             PlusButton.UseVisualStyleBackColor = true;
+            PlusButton.Click += PlusButton_Click;
             // 
             // MinusButton
             // 
@@ -180,6 +184,7 @@
             MinusButton.TabIndex = 71;
             MinusButton.Text = "-";
             MinusButton.UseVisualStyleBackColor = true;
+            MinusButton.Click += MinusButton_Click;
             // 
             // FloorItemsForm
             // 
@@ -202,6 +207,7 @@
             Controls.Add(label2);
             Controls.Add(PositionXTextBox);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FloorItemsForm";
             Text = "Edit Floor Items";

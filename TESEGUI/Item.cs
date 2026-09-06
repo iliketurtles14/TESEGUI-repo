@@ -13,5 +13,9 @@ namespace TESEGUI
             this.id = id;
             this.durability = durability;
         }
+        public Item Clone()
+        {
+            return new Item(id, durability);
+        }
     }
 }

@@ -71,6 +71,7 @@
             SaveButton.TabIndex = 94;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // BackButton
             // 
@@ -81,6 +82,7 @@
             BackButton.TabIndex = 93;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // HasJobCheckBox
             // 
@@ -91,6 +93,7 @@
             HasJobCheckBox.TabIndex = 96;
             HasJobCheckBox.Text = "Has Job";
             HasJobCheckBox.UseVisualStyleBackColor = true;
+            HasJobCheckBox.CheckedChanged += HasJobCheckBox_CheckedChanged;
             // 
             // Durability4TextBox
             // 
@@ -245,6 +248,7 @@
             Controls.Add(NPCNameLabel);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "ShopForm";
             Text = "Edit Shop";

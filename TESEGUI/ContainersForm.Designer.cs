@@ -130,6 +130,7 @@
             SaveButton.TabIndex = 224;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // BackButton
             // 
@@ -140,6 +141,7 @@
             BackButton.TabIndex = 223;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // Durability20TextBox
             // 
@@ -836,6 +838,7 @@
             ContainerListBox.Name = "ContainerListBox";
             ContainerListBox.Size = new Size(120, 109);
             ContainerListBox.TabIndex = 136;
+            ContainerListBox.SelectedIndexChanged += ContainerListBox_SelectedIndexChanged;
             // 
             // PlusButton
             // 
@@ -845,6 +848,7 @@
             PlusButton.TabIndex = 225;
             PlusButton.Text = "+";
             PlusButton.UseVisualStyleBackColor = true;
+            PlusButton.Click += PlusButton_Click;
             // 
             // MinusButton
             // 
@@ -854,6 +858,7 @@
             MinusButton.TabIndex = 226;
             MinusButton.Text = "-";
             MinusButton.UseVisualStyleBackColor = true;
+            MinusButton.Click += MinusButton_Click;
             // 
             // ContainersForm
             // 
@@ -951,6 +956,7 @@
             Controls.Add(PositionXTextBox);
             Controls.Add(label1);
             Controls.Add(ContainerListBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "ContainersForm";
             Text = "Edit Containers";

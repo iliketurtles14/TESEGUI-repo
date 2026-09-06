@@ -49,8 +49,6 @@ namespace TESEGUI
         public List<Stash> prisonStashes;
         public List<Vent> prisonVents;
         public List<Slat> prisonSlats;
-        public List<Wall> prisonWalls;
-        public List<Removed> prisonRemoveds;
         public int jobsJanitor;
         public int jobsGardening;
         public int jobsLaundry;
@@ -80,7 +78,7 @@ namespace TESEGUI
             List<Mine> prisonMines, List<DugSoil> prisonDugSoils, List<Rock> prisonRocks,
             List<Hole> prisonHoles, List<Brace> prisonBraces, List<Alert> prisonAlerts,
             List<Curtain> prisonCurtains, List<Stash> prisonStashes, List<Vent> prisonVents,
-            List<Slat> prisonSlats, List<Wall> prisonWalls, List<Removed> prisonRemoveds,
+            List<Slat> prisonSlats,
             int jobsJanitor, int jobsGardening, int jobsLaundry, int jobsKitchen, int jobsTailorshop,
             int jobsWoodshop, int jobsMetalshop, int jobsLibrary, int jobsMailman, int jobsDeliveries,
             string trackingCuts, string trackingChipped, string trackingDug, string trackingDowned,
@@ -128,8 +126,6 @@ namespace TESEGUI
             this.prisonStashes = prisonStashes;
             this.prisonVents = prisonVents;
             this.prisonSlats = prisonSlats;
-            this.prisonWalls = prisonWalls;
-            this.prisonRemoveds = prisonRemoveds;
             this.jobsJanitor = jobsJanitor;
             this.jobsGardening = jobsGardening;
             this.jobsLaundry = jobsLaundry;

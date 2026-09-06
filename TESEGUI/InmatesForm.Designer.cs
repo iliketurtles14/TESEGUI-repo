@@ -39,7 +39,7 @@
             IntellectTextBox = new TextBox();
             label5 = new Label();
             OpinionTextBox = new TextBox();
-            checkBox1 = new CheckBox();
+            Flag2001CheckBox = new CheckBox();
             label6 = new Label();
             CharacterButton = new Button();
             ShopButton = new Button();
@@ -54,10 +54,12 @@
             // InmatesListBox
             // 
             InmatesListBox.FormattingEnabled = true;
+            InmatesListBox.HorizontalScrollbar = true;
             InmatesListBox.Location = new Point(402, 6);
             InmatesListBox.Name = "InmatesListBox";
             InmatesListBox.Size = new Size(120, 139);
             InmatesListBox.TabIndex = 0;
+            InmatesListBox.SelectedIndexChanged += InmatesListBox_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -74,6 +76,7 @@
             NameTextBox.Name = "NameTextBox";
             NameTextBox.Size = new Size(336, 23);
             NameTextBox.TabIndex = 2;
+            NameTextBox.Leave += NameTextBox_Leave;
             // 
             // label2
             // 
@@ -139,16 +142,16 @@
             OpinionTextBox.Size = new Size(50, 23);
             OpinionTextBox.TabIndex = 10;
             // 
-            // checkBox1
+            // Flag2001CheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(12, 89);
-            checkBox1.Name = "checkBox1";
-            checkBox1.RightToLeft = RightToLeft.Yes;
-            checkBox1.Size = new Size(83, 19);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = ":*Flag 2001";
-            checkBox1.UseVisualStyleBackColor = true;
+            Flag2001CheckBox.AutoSize = true;
+            Flag2001CheckBox.Location = new Point(12, 89);
+            Flag2001CheckBox.Name = "Flag2001CheckBox";
+            Flag2001CheckBox.RightToLeft = RightToLeft.Yes;
+            Flag2001CheckBox.Size = new Size(83, 19);
+            Flag2001CheckBox.TabIndex = 11;
+            Flag2001CheckBox.Text = ":*Flag 2001";
+            Flag2001CheckBox.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -167,6 +170,7 @@
             CharacterButton.TabIndex = 13;
             CharacterButton.Text = "Character";
             CharacterButton.UseVisualStyleBackColor = true;
+            CharacterButton.Click += CharacterButton_Click;
             // 
             // ShopButton
             // 
@@ -176,6 +180,7 @@
             ShopButton.TabIndex = 14;
             ShopButton.Text = "Shop";
             ShopButton.UseVisualStyleBackColor = true;
+            ShopButton.Click += ShopButton_Click;
             // 
             // InventoryButton
             // 
@@ -185,6 +190,7 @@
             InventoryButton.TabIndex = 15;
             InventoryButton.Text = "Inventory";
             InventoryButton.UseVisualStyleBackColor = true;
+            InventoryButton.Click += InventoryButton_Click;
             // 
             // BackButton
             // 
@@ -195,6 +201,7 @@
             BackButton.TabIndex = 16;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -205,6 +212,7 @@
             SaveButton.TabIndex = 17;
             SaveButton.Text = "Save**";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // label7
             // 
@@ -223,6 +231,7 @@
             PlusButton.TabIndex = 19;
             PlusButton.Text = "+";
             PlusButton.UseVisualStyleBackColor = true;
+            PlusButton.Click += PlusButton_Click;
             // 
             // MinusButton
             // 
@@ -232,6 +241,7 @@
             MinusButton.TabIndex = 20;
             MinusButton.Text = "-";
             MinusButton.UseVisualStyleBackColor = true;
+            MinusButton.Click += MinusButton_Click;
             // 
             // InmatesForm
             // 
@@ -247,7 +257,7 @@
             Controls.Add(ShopButton);
             Controls.Add(CharacterButton);
             Controls.Add(label6);
-            Controls.Add(checkBox1);
+            Controls.Add(Flag2001CheckBox);
             Controls.Add(OpinionTextBox);
             Controls.Add(label5);
             Controls.Add(IntellectTextBox);
@@ -259,8 +269,11 @@
             Controls.Add(NameTextBox);
             Controls.Add(label1);
             Controls.Add(InmatesListBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "InmatesForm";
             Text = "Edit Inmates";
+            Load += InmatesForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -278,7 +291,7 @@
         private TextBox IntellectTextBox;
         private Label label5;
         private TextBox OpinionTextBox;
-        private CheckBox checkBox1;
+        private CheckBox Flag2001CheckBox;
         private Label label6;
         private Button CharacterButton;
         private Button ShopButton;

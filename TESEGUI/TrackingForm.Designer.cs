@@ -131,6 +131,7 @@
             BackButton.TabIndex = 10;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -141,6 +142,7 @@
             SaveButton.TabIndex = 11;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // TrackingForm
             // 
@@ -159,6 +161,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "TrackingForm";
             Text = "Edit Tracking";

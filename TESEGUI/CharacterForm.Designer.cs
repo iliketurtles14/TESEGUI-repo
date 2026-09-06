@@ -30,7 +30,7 @@
         {
             CharacterPictureBox = new PictureBox();
             RightButton = new Button();
-            button1 = new Button();
+            LeftButton = new Button();
             BackButton = new Button();
             SaveButton = new Button();
             ((System.ComponentModel.ISupportInitialize)CharacterPictureBox).BeginInit();
@@ -54,16 +54,18 @@
             RightButton.TabIndex = 1;
             RightButton.Text = ">";
             RightButton.UseVisualStyleBackColor = true;
+            RightButton.Click += RightButton_Click;
             // 
-            // button1
+            // LeftButton
             // 
-            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 122);
-            button1.Name = "button1";
-            button1.Size = new Size(50, 50);
-            button1.TabIndex = 2;
-            button1.Text = "<";
-            button1.UseVisualStyleBackColor = true;
+            LeftButton.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LeftButton.Location = new Point(12, 122);
+            LeftButton.Name = "LeftButton";
+            LeftButton.Size = new Size(50, 50);
+            LeftButton.TabIndex = 2;
+            LeftButton.Text = "<";
+            LeftButton.UseVisualStyleBackColor = true;
+            LeftButton.Click += LeftButton_Click;
             // 
             // BackButton
             // 
@@ -74,6 +76,7 @@
             BackButton.TabIndex = 3;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -84,6 +87,7 @@
             SaveButton.TabIndex = 4;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // CharacterForm
             // 
@@ -92,9 +96,10 @@
             ClientSize = new Size(296, 209);
             Controls.Add(SaveButton);
             Controls.Add(BackButton);
-            Controls.Add(button1);
+            Controls.Add(LeftButton);
             Controls.Add(RightButton);
             Controls.Add(CharacterPictureBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "CharacterForm";
             Text = "Edit Character";
@@ -106,7 +111,7 @@
 
         private PictureBox CharacterPictureBox;
         private Button RightButton;
-        private Button button1;
+        private Button LeftButton;
         private Button BackButton;
         private Button SaveButton;
     }

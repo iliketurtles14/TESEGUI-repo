@@ -66,6 +66,7 @@
             SaveButton.TabIndex = 67;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // BackButton
             // 
@@ -76,6 +77,7 @@
             BackButton.TabIndex = 66;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // Durability6TextBox
             // 
@@ -313,6 +315,7 @@
             Controls.Add(label2);
             Controls.Add(Item1TextBox);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "NPCInventoryForm";
             Text = "Edit Inventory";

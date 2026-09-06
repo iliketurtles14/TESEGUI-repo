@@ -128,6 +128,7 @@
             DeskListBox.Name = "DeskListBox";
             DeskListBox.Size = new Size(120, 109);
             DeskListBox.TabIndex = 0;
+            DeskListBox.SelectedIndexChanged += DeskListBox_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -826,6 +827,7 @@
             BackButton.TabIndex = 134;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -836,6 +838,7 @@
             SaveButton.TabIndex = 135;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // MinusButton
             // 
@@ -845,6 +848,7 @@
             MinusButton.TabIndex = 228;
             MinusButton.Text = "-";
             MinusButton.UseVisualStyleBackColor = true;
+            MinusButton.Click += MinusButton_Click;
             // 
             // PlusButton
             // 
@@ -854,6 +858,7 @@
             PlusButton.TabIndex = 227;
             PlusButton.Text = "+";
             PlusButton.UseVisualStyleBackColor = true;
+            PlusButton.Click += PlusButton_Click;
             // 
             // DesksForm
             // 
@@ -951,6 +956,7 @@
             Controls.Add(PositionXTextBox);
             Controls.Add(label1);
             Controls.Add(DeskListBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "DesksForm";
             Text = "Edit Desks";

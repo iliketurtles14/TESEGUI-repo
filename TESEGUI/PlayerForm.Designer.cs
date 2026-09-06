@@ -72,30 +72,30 @@
             label16 = new Label();
             PlaytimeTextBox = new TextBox();
             label17 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox9 = new CheckBox();
-            checkBox10 = new CheckBox();
-            checkBox11 = new CheckBox();
-            checkBox12 = new CheckBox();
-            checkBox13 = new CheckBox();
-            checkBox14 = new CheckBox();
-            checkBox15 = new CheckBox();
-            checkBox16 = new CheckBox();
-            checkBox17 = new CheckBox();
+            Tooltips1CheckBox = new CheckBox();
+            Tooltips2CheckBox = new CheckBox();
+            Tooltips3CheckBox = new CheckBox();
+            Tooltips4CheckBox = new CheckBox();
+            Tooltips6CheckBox = new CheckBox();
+            Tooltips5CheckBox = new CheckBox();
+            Tooltips8CheckBox = new CheckBox();
+            Tooltips7CheckBox = new CheckBox();
+            Tooltips9CheckBox = new CheckBox();
+            Tooltips10CheckBox = new CheckBox();
+            Tooltips11CheckBox = new CheckBox();
+            Tooltips12CheckBox = new CheckBox();
+            Tooltips13CheckBox = new CheckBox();
+            Tooltips14CheckBox = new CheckBox();
+            Tooltips15CheckBox = new CheckBox();
+            Tooltips16CheckBox = new CheckBox();
+            Tooltips17CheckBox = new CheckBox();
             label18 = new Label();
             MapTextBox = new TextBox();
             label19 = new Label();
             MapNameTextBox = new TextBox();
             label20 = new Label();
             label21 = new Label();
-            textBox1 = new TextBox();
+            MapTypeTextBox = new TextBox();
             label22 = new Label();
             PScoreTextBox = new TextBox();
             label23 = new Label();
@@ -212,7 +212,6 @@
             label7.Size = new Size(292, 15);
             label7.TabIndex = 12;
             label7.Text = "*1: Underground; 2: Ground; 3: Lights; 4: Vents; 5: Roof";
-            label7.Click += label7_Click;
             // 
             // JanitorButton
             // 
@@ -340,7 +339,6 @@
             label9.Size = new Size(36, 15);
             label9.TabIndex = 24;
             label9.Text = "Cash:";
-            label9.Click += label9_Click;
             // 
             // CashTextBox
             // 
@@ -464,6 +462,7 @@
             InventoryButton.TabIndex = 39;
             InventoryButton.Text = "Inventory";
             InventoryButton.UseVisualStyleBackColor = true;
+            InventoryButton.Click += InventoryButton_Click;
             // 
             // CharacterButton
             // 
@@ -473,6 +472,7 @@
             CharacterButton.TabIndex = 40;
             CharacterButton.Text = "Character";
             CharacterButton.UseVisualStyleBackColor = true;
+            CharacterButton.Click += CharacterButton_Click;
             // 
             // label16
             // 
@@ -499,176 +499,175 @@
             label17.TabIndex = 43;
             label17.Text = "Tooltips (perks only):";
             // 
-            // checkBox1
+            // Tooltips1CheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(135, 357);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(32, 19);
-            checkBox1.TabIndex = 44;
-            checkBox1.Text = "1";
-            checkBox1.UseVisualStyleBackColor = true;
+            Tooltips1CheckBox.AutoSize = true;
+            Tooltips1CheckBox.Location = new Point(135, 357);
+            Tooltips1CheckBox.Name = "Tooltips1CheckBox";
+            Tooltips1CheckBox.Size = new Size(32, 19);
+            Tooltips1CheckBox.TabIndex = 44;
+            Tooltips1CheckBox.Text = "1";
+            Tooltips1CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // Tooltips2CheckBox
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(173, 357);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(32, 19);
-            checkBox2.TabIndex = 45;
-            checkBox2.Text = "2";
-            checkBox2.UseVisualStyleBackColor = true;
+            Tooltips2CheckBox.AutoSize = true;
+            Tooltips2CheckBox.Location = new Point(173, 357);
+            Tooltips2CheckBox.Name = "Tooltips2CheckBox";
+            Tooltips2CheckBox.Size = new Size(32, 19);
+            Tooltips2CheckBox.TabIndex = 45;
+            Tooltips2CheckBox.Text = "2";
+            Tooltips2CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // Tooltips3CheckBox
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(211, 357);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(32, 19);
-            checkBox3.TabIndex = 46;
-            checkBox3.Text = "3";
-            checkBox3.UseVisualStyleBackColor = true;
+            Tooltips3CheckBox.AutoSize = true;
+            Tooltips3CheckBox.Location = new Point(211, 357);
+            Tooltips3CheckBox.Name = "Tooltips3CheckBox";
+            Tooltips3CheckBox.Size = new Size(32, 19);
+            Tooltips3CheckBox.TabIndex = 46;
+            Tooltips3CheckBox.Text = "3";
+            Tooltips3CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // Tooltips4CheckBox
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(249, 357);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(32, 19);
-            checkBox4.TabIndex = 47;
-            checkBox4.Text = "4";
-            checkBox4.UseVisualStyleBackColor = true;
+            Tooltips4CheckBox.AutoSize = true;
+            Tooltips4CheckBox.Location = new Point(249, 357);
+            Tooltips4CheckBox.Name = "Tooltips4CheckBox";
+            Tooltips4CheckBox.Size = new Size(32, 19);
+            Tooltips4CheckBox.TabIndex = 47;
+            Tooltips4CheckBox.Text = "4";
+            Tooltips4CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // Tooltips6CheckBox
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(325, 357);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(32, 19);
-            checkBox5.TabIndex = 48;
-            checkBox5.Text = "6";
-            checkBox5.UseVisualStyleBackColor = true;
+            Tooltips6CheckBox.AutoSize = true;
+            Tooltips6CheckBox.Location = new Point(325, 357);
+            Tooltips6CheckBox.Name = "Tooltips6CheckBox";
+            Tooltips6CheckBox.Size = new Size(32, 19);
+            Tooltips6CheckBox.TabIndex = 48;
+            Tooltips6CheckBox.Text = "6";
+            Tooltips6CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // Tooltips5CheckBox
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(287, 357);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(32, 19);
-            checkBox6.TabIndex = 49;
-            checkBox6.Text = "5";
-            checkBox6.UseVisualStyleBackColor = true;
+            Tooltips5CheckBox.AutoSize = true;
+            Tooltips5CheckBox.Location = new Point(287, 357);
+            Tooltips5CheckBox.Name = "Tooltips5CheckBox";
+            Tooltips5CheckBox.Size = new Size(32, 19);
+            Tooltips5CheckBox.TabIndex = 49;
+            Tooltips5CheckBox.Text = "5";
+            Tooltips5CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // Tooltips8CheckBox
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(401, 357);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(32, 19);
-            checkBox7.TabIndex = 50;
-            checkBox7.Text = "8";
-            checkBox7.UseVisualStyleBackColor = true;
+            Tooltips8CheckBox.AutoSize = true;
+            Tooltips8CheckBox.Location = new Point(401, 357);
+            Tooltips8CheckBox.Name = "Tooltips8CheckBox";
+            Tooltips8CheckBox.Size = new Size(32, 19);
+            Tooltips8CheckBox.TabIndex = 50;
+            Tooltips8CheckBox.Text = "8";
+            Tooltips8CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // Tooltips7CheckBox
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(363, 357);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(32, 19);
-            checkBox8.TabIndex = 51;
-            checkBox8.Text = "7";
-            checkBox8.UseVisualStyleBackColor = true;
+            Tooltips7CheckBox.AutoSize = true;
+            Tooltips7CheckBox.Location = new Point(363, 357);
+            Tooltips7CheckBox.Name = "Tooltips7CheckBox";
+            Tooltips7CheckBox.Size = new Size(32, 19);
+            Tooltips7CheckBox.TabIndex = 51;
+            Tooltips7CheckBox.Text = "7";
+            Tooltips7CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // Tooltips9CheckBox
             // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(135, 382);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(32, 19);
-            checkBox9.TabIndex = 52;
-            checkBox9.Text = "9";
-            checkBox9.UseVisualStyleBackColor = true;
+            Tooltips9CheckBox.AutoSize = true;
+            Tooltips9CheckBox.Location = new Point(135, 382);
+            Tooltips9CheckBox.Name = "Tooltips9CheckBox";
+            Tooltips9CheckBox.Size = new Size(32, 19);
+            Tooltips9CheckBox.TabIndex = 52;
+            Tooltips9CheckBox.Text = "9";
+            Tooltips9CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // Tooltips10CheckBox
             // 
-            checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(173, 382);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(38, 19);
-            checkBox10.TabIndex = 53;
-            checkBox10.Text = "10";
-            checkBox10.UseVisualStyleBackColor = true;
+            Tooltips10CheckBox.AutoSize = true;
+            Tooltips10CheckBox.Location = new Point(173, 382);
+            Tooltips10CheckBox.Name = "Tooltips10CheckBox";
+            Tooltips10CheckBox.Size = new Size(38, 19);
+            Tooltips10CheckBox.TabIndex = 53;
+            Tooltips10CheckBox.Text = "10";
+            Tooltips10CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // Tooltips11CheckBox
             // 
-            checkBox11.AutoSize = true;
-            checkBox11.Location = new Point(217, 382);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(38, 19);
-            checkBox11.TabIndex = 54;
-            checkBox11.Text = "11";
-            checkBox11.UseVisualStyleBackColor = true;
+            Tooltips11CheckBox.AutoSize = true;
+            Tooltips11CheckBox.Location = new Point(217, 382);
+            Tooltips11CheckBox.Name = "Tooltips11CheckBox";
+            Tooltips11CheckBox.Size = new Size(38, 19);
+            Tooltips11CheckBox.TabIndex = 54;
+            Tooltips11CheckBox.Text = "11";
+            Tooltips11CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // Tooltips12CheckBox
             // 
-            checkBox12.AutoSize = true;
-            checkBox12.Location = new Point(261, 382);
-            checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(38, 19);
-            checkBox12.TabIndex = 55;
-            checkBox12.Text = "12";
-            checkBox12.UseVisualStyleBackColor = true;
+            Tooltips12CheckBox.AutoSize = true;
+            Tooltips12CheckBox.Location = new Point(261, 382);
+            Tooltips12CheckBox.Name = "Tooltips12CheckBox";
+            Tooltips12CheckBox.Size = new Size(38, 19);
+            Tooltips12CheckBox.TabIndex = 55;
+            Tooltips12CheckBox.Text = "12";
+            Tooltips12CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // Tooltips13CheckBox
             // 
-            checkBox13.AutoSize = true;
-            checkBox13.Location = new Point(305, 382);
-            checkBox13.Name = "checkBox13";
-            checkBox13.Size = new Size(38, 19);
-            checkBox13.TabIndex = 56;
-            checkBox13.Text = "13";
-            checkBox13.UseVisualStyleBackColor = true;
+            Tooltips13CheckBox.AutoSize = true;
+            Tooltips13CheckBox.Location = new Point(305, 382);
+            Tooltips13CheckBox.Name = "Tooltips13CheckBox";
+            Tooltips13CheckBox.Size = new Size(38, 19);
+            Tooltips13CheckBox.TabIndex = 56;
+            Tooltips13CheckBox.Text = "13";
+            Tooltips13CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // Tooltips14CheckBox
             // 
-            checkBox14.AutoSize = true;
-            checkBox14.Location = new Point(349, 382);
-            checkBox14.Name = "checkBox14";
-            checkBox14.Size = new Size(38, 19);
-            checkBox14.TabIndex = 57;
-            checkBox14.Text = "14";
-            checkBox14.UseVisualStyleBackColor = true;
-            checkBox14.CheckedChanged += checkBox14_CheckedChanged;
+            Tooltips14CheckBox.AutoSize = true;
+            Tooltips14CheckBox.Location = new Point(349, 382);
+            Tooltips14CheckBox.Name = "Tooltips14CheckBox";
+            Tooltips14CheckBox.Size = new Size(38, 19);
+            Tooltips14CheckBox.TabIndex = 57;
+            Tooltips14CheckBox.Text = "14";
+            Tooltips14CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // Tooltips15CheckBox
             // 
-            checkBox15.AutoSize = true;
-            checkBox15.Location = new Point(393, 382);
-            checkBox15.Name = "checkBox15";
-            checkBox15.Size = new Size(38, 19);
-            checkBox15.TabIndex = 58;
-            checkBox15.Text = "15";
-            checkBox15.UseVisualStyleBackColor = true;
+            Tooltips15CheckBox.AutoSize = true;
+            Tooltips15CheckBox.Location = new Point(393, 382);
+            Tooltips15CheckBox.Name = "Tooltips15CheckBox";
+            Tooltips15CheckBox.Size = new Size(38, 19);
+            Tooltips15CheckBox.TabIndex = 58;
+            Tooltips15CheckBox.Text = "15";
+            Tooltips15CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // Tooltips16CheckBox
             // 
-            checkBox16.AutoSize = true;
-            checkBox16.Location = new Point(437, 382);
-            checkBox16.Name = "checkBox16";
-            checkBox16.Size = new Size(38, 19);
-            checkBox16.TabIndex = 59;
-            checkBox16.Text = "16";
-            checkBox16.UseVisualStyleBackColor = true;
+            Tooltips16CheckBox.AutoSize = true;
+            Tooltips16CheckBox.Location = new Point(437, 382);
+            Tooltips16CheckBox.Name = "Tooltips16CheckBox";
+            Tooltips16CheckBox.Size = new Size(38, 19);
+            Tooltips16CheckBox.TabIndex = 59;
+            Tooltips16CheckBox.Text = "16";
+            Tooltips16CheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // Tooltips17CheckBox
             // 
-            checkBox17.AutoSize = true;
-            checkBox17.Location = new Point(481, 382);
-            checkBox17.Name = "checkBox17";
-            checkBox17.Size = new Size(38, 19);
-            checkBox17.TabIndex = 60;
-            checkBox17.Text = "17";
-            checkBox17.UseVisualStyleBackColor = true;
+            Tooltips17CheckBox.AutoSize = true;
+            Tooltips17CheckBox.Location = new Point(481, 382);
+            Tooltips17CheckBox.Name = "Tooltips17CheckBox";
+            Tooltips17CheckBox.Size = new Size(38, 19);
+            Tooltips17CheckBox.TabIndex = 60;
+            Tooltips17CheckBox.Text = "17";
+            Tooltips17CheckBox.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
@@ -720,12 +719,12 @@
             label21.TabIndex = 66;
             label21.Text = "**0: Main; 1: Bonus; 2: Custom";
             // 
-            // textBox1
+            // MapTypeTextBox
             // 
-            textBox1.Location = new Point(90, 249);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(50, 23);
-            textBox1.TabIndex = 67;
+            MapTypeTextBox.Location = new Point(90, 249);
+            MapTypeTextBox.Name = "MapTypeTextBox";
+            MapTypeTextBox.Size = new Size(50, 23);
+            MapTypeTextBox.TabIndex = 67;
             // 
             // label22
             // 
@@ -800,6 +799,7 @@
             BackButton.TabIndex = 76;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -810,6 +810,7 @@
             SaveButton.TabIndex = 77;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // PlayerForm
             // 
@@ -826,30 +827,30 @@
             Controls.Add(label23);
             Controls.Add(PScoreTextBox);
             Controls.Add(label22);
-            Controls.Add(textBox1);
+            Controls.Add(MapTypeTextBox);
             Controls.Add(label21);
             Controls.Add(label20);
             Controls.Add(MapNameTextBox);
             Controls.Add(label19);
             Controls.Add(MapTextBox);
             Controls.Add(label18);
-            Controls.Add(checkBox17);
-            Controls.Add(checkBox16);
-            Controls.Add(checkBox15);
-            Controls.Add(checkBox14);
-            Controls.Add(checkBox13);
-            Controls.Add(checkBox12);
-            Controls.Add(checkBox11);
-            Controls.Add(checkBox10);
-            Controls.Add(checkBox9);
-            Controls.Add(checkBox8);
-            Controls.Add(checkBox7);
-            Controls.Add(checkBox6);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(Tooltips17CheckBox);
+            Controls.Add(Tooltips16CheckBox);
+            Controls.Add(Tooltips15CheckBox);
+            Controls.Add(Tooltips14CheckBox);
+            Controls.Add(Tooltips13CheckBox);
+            Controls.Add(Tooltips12CheckBox);
+            Controls.Add(Tooltips11CheckBox);
+            Controls.Add(Tooltips10CheckBox);
+            Controls.Add(Tooltips9CheckBox);
+            Controls.Add(Tooltips7CheckBox);
+            Controls.Add(Tooltips8CheckBox);
+            Controls.Add(Tooltips5CheckBox);
+            Controls.Add(Tooltips6CheckBox);
+            Controls.Add(Tooltips4CheckBox);
+            Controls.Add(Tooltips3CheckBox);
+            Controls.Add(Tooltips2CheckBox);
+            Controls.Add(Tooltips1CheckBox);
             Controls.Add(label17);
             Controls.Add(PlaytimeTextBox);
             Controls.Add(label16);
@@ -894,6 +895,7 @@
             Controls.Add(label2);
             Controls.Add(NameTextBox);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "PlayerForm";
             Text = "Edit Player";
@@ -948,30 +950,30 @@
         private Label label16;
         private TextBox PlaytimeTextBox;
         private Label label17;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private CheckBox checkBox7;
-        private CheckBox checkBox8;
-        private CheckBox checkBox9;
-        private CheckBox checkBox10;
-        private CheckBox checkBox11;
-        private CheckBox checkBox12;
-        private CheckBox checkBox13;
-        private CheckBox checkBox14;
-        private CheckBox checkBox15;
-        private CheckBox checkBox16;
-        private CheckBox checkBox17;
+        private CheckBox Tooltips1CheckBox;
+        private CheckBox Tooltips2CheckBox;
+        private CheckBox Tooltips3CheckBox;
+        private CheckBox Tooltips4CheckBox;
+        private CheckBox Tooltips6CheckBox;
+        private CheckBox Tooltips5CheckBox;
+        private CheckBox Tooltips8CheckBox;
+        private CheckBox Tooltips7CheckBox;
+        private CheckBox Tooltips9CheckBox;
+        private CheckBox Tooltips10CheckBox;
+        private CheckBox Tooltips11CheckBox;
+        private CheckBox Tooltips12CheckBox;
+        private CheckBox Tooltips13CheckBox;
+        private CheckBox Tooltips14CheckBox;
+        private CheckBox Tooltips15CheckBox;
+        private CheckBox Tooltips16CheckBox;
+        private CheckBox Tooltips17CheckBox;
         private Label label18;
         private TextBox MapTextBox;
         private Label label19;
         private TextBox MapNameTextBox;
         private Label label20;
         private Label label21;
-        private TextBox textBox1;
+        private TextBox MapTypeTextBox;
         private Label label22;
         private TextBox PScoreTextBox;
         private Label label23;

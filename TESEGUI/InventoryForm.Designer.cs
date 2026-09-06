@@ -329,6 +329,7 @@
             BackButton.TabIndex = 32;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -339,6 +340,7 @@
             SaveButton.TabIndex = 33;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // InventoryForm
             // 
@@ -379,6 +381,7 @@
             Controls.Add(label2);
             Controls.Add(Item1TextBox);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "InventoryForm";
             Text = "Edit Inventory";

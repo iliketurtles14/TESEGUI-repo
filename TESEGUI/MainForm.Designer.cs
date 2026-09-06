@@ -39,7 +39,7 @@
             TrackingButton = new Button();
             label1 = new Label();
             ExportButton = new Button();
-            checkBox1 = new CheckBox();
+            PositionCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // PlayerButton
@@ -51,6 +51,7 @@
             PlayerButton.TabIndex = 0;
             PlayerButton.Text = "Player";
             PlayerButton.UseVisualStyleBackColor = true;
+            PlayerButton.Click += PlayerButton_Click;
             // 
             // PrisonButton
             // 
@@ -61,6 +62,7 @@
             PrisonButton.TabIndex = 1;
             PrisonButton.Text = "Prison";
             PrisonButton.UseVisualStyleBackColor = true;
+            PrisonButton.Click += PrisonButton_Click;
             // 
             // InmatesButton
             // 
@@ -71,6 +73,7 @@
             InmatesButton.TabIndex = 2;
             InmatesButton.Text = "Inmates";
             InmatesButton.UseVisualStyleBackColor = true;
+            InmatesButton.Click += InmatesButton_Click;
             // 
             // GuardsButton
             // 
@@ -81,6 +84,7 @@
             GuardsButton.TabIndex = 3;
             GuardsButton.Text = "Guards";
             GuardsButton.UseVisualStyleBackColor = true;
+            GuardsButton.Click += GuardsButton_Click;
             // 
             // DesksButton
             // 
@@ -91,6 +95,7 @@
             DesksButton.TabIndex = 4;
             DesksButton.Text = "Desks";
             DesksButton.UseVisualStyleBackColor = true;
+            DesksButton.Click += DesksButton_Click;
             // 
             // ContainersButton
             // 
@@ -101,6 +106,7 @@
             ContainersButton.TabIndex = 5;
             ContainersButton.Text = "Containers";
             ContainersButton.UseVisualStyleBackColor = true;
+            ContainersButton.Click += ContainersButton_Click;
             // 
             // FloorItemsButton
             // 
@@ -111,6 +117,7 @@
             FloorItemsButton.TabIndex = 6;
             FloorItemsButton.Text = "Floor Items";
             FloorItemsButton.UseVisualStyleBackColor = true;
+            FloorItemsButton.Click += FloorItemsButton_Click;
             // 
             // JobsButton
             // 
@@ -121,6 +128,7 @@
             JobsButton.TabIndex = 7;
             JobsButton.Text = "Jobs";
             JobsButton.UseVisualStyleBackColor = true;
+            JobsButton.Click += JobsButton_Click;
             // 
             // TrackingButton
             // 
@@ -131,6 +139,7 @@
             TrackingButton.TabIndex = 8;
             TrackingButton.Text = "Tracking";
             TrackingButton.UseVisualStyleBackColor = true;
+            TrackingButton.Click += TrackingButton_Click;
             // 
             // label1
             // 
@@ -150,25 +159,27 @@
             ExportButton.TabIndex = 10;
             ExportButton.Text = "Export";
             ExportButton.UseVisualStyleBackColor = true;
+            ExportButton.Click += ExportButton_Click;
             // 
-            // checkBox1
+            // PositionCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Checked = true;
-            checkBox1.CheckState = CheckState.Checked;
-            checkBox1.Location = new Point(265, 214);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(208, 19);
-            checkBox1.TabIndex = 12;
-            checkBox1.Text = "Show position values in tile format";
-            checkBox1.UseVisualStyleBackColor = true;
+            PositionCheckBox.AutoSize = true;
+            PositionCheckBox.Checked = true;
+            PositionCheckBox.CheckState = CheckState.Checked;
+            PositionCheckBox.Location = new Point(265, 214);
+            PositionCheckBox.Name = "PositionCheckBox";
+            PositionCheckBox.Size = new Size(208, 19);
+            PositionCheckBox.TabIndex = 12;
+            PositionCheckBox.Text = "Show position values in tile format";
+            PositionCheckBox.UseVisualStyleBackColor = true;
+            PositionCheckBox.CheckedChanged += PositionCheckBox_CheckedChanged;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 241);
-            Controls.Add(checkBox1);
+            Controls.Add(PositionCheckBox);
             Controls.Add(ExportButton);
             Controls.Add(label1);
             Controls.Add(TrackingButton);
@@ -180,6 +191,7 @@
             Controls.Add(InmatesButton);
             Controls.Add(PrisonButton);
             Controls.Add(PlayerButton);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "MainForm";
             Text = "The Escapists Save Editor";
@@ -201,6 +213,6 @@
         private Button TrackingButton;
         private Label label1;
         private Button ExportButton;
-        private CheckBox checkBox1;
+        private CheckBox PositionCheckBox;
     }
 }

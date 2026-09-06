@@ -14,5 +14,20 @@ namespace TESEGUI
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HasJobCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

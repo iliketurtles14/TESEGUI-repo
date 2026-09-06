@@ -14,8 +14,7 @@ namespace TESEGUI
         public List<string> patrol;
         public bool flag2001;
         public List<Item> inventory;
-        public int character;
-        public Guard(string name, string strength, string speed, string intellect, string opinion, List<string> patrol, bool flag2001, List<Item> inventory, int character)
+        public Guard(string name, string strength, string speed, string intellect, string opinion, List<string> patrol, bool flag2001, List<Item> inventory)
         {
             this.name = name;
             this.strength = strength;
@@ -25,7 +24,6 @@ namespace TESEGUI
             this.patrol = patrol;
             this.flag2001 = flag2001;
             this.inventory = inventory;
-            this.character = character;
         }
     }
 }

@@ -74,6 +74,7 @@
             SaveButton.TabIndex = 36;
             SaveButton.Text = "Save**";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // BackButton
             // 
@@ -84,6 +85,7 @@
             BackButton.TabIndex = 35;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // InventoryButton
             // 
@@ -93,6 +95,7 @@
             InventoryButton.TabIndex = 34;
             InventoryButton.Text = "Inventory";
             InventoryButton.UseVisualStyleBackColor = true;
+            InventoryButton.Click += InventoryButton_Click;
             // 
             // CharacterButton
             // 
@@ -102,6 +105,7 @@
             CharacterButton.TabIndex = 32;
             CharacterButton.Text = "Character";
             CharacterButton.UseVisualStyleBackColor = true;
+            CharacterButton.Click += CharacterButton_Click;
             // 
             // label6
             // 
@@ -206,10 +210,12 @@
             // GuardsListBox
             // 
             GuardsListBox.FormattingEnabled = true;
+            GuardsListBox.HorizontalScrollbar = true;
             GuardsListBox.Location = new Point(402, 7);
             GuardsListBox.Name = "GuardsListBox";
             GuardsListBox.Size = new Size(120, 169);
             GuardsListBox.TabIndex = 19;
+            GuardsListBox.SelectedIndexChanged += GuardsListBox_SelectedIndexChanged;
             // 
             // label8
             // 
@@ -263,6 +269,7 @@
             PlusButton.TabIndex = 44;
             PlusButton.Text = "+";
             PlusButton.UseVisualStyleBackColor = true;
+            PlusButton.Click += PlusButton_Click;
             // 
             // MinusButton
             // 
@@ -272,6 +279,7 @@
             MinusButton.TabIndex = 45;
             MinusButton.Text = "-";
             MinusButton.UseVisualStyleBackColor = true;
+            MinusButton.Click += MinusButton_Click;
             // 
             // GuardsForm
             // 
@@ -304,6 +312,7 @@
             Controls.Add(NameTextBox);
             Controls.Add(label1);
             Controls.Add(GuardsListBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "GuardsForm";
             Text = "Edit Guards";

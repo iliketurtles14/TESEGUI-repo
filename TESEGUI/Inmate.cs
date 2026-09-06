@@ -30,5 +30,43 @@ namespace TESEGUI
             this.hasShop = hasShop;
             this.shopInventory = shopInventory;
         }
+        public Inmate Clone()
+        {
+            return new Inmate(
+                name,
+                strength,
+                speed,
+                intellect,
+                opinion,
+                flag2001,
+                CloneItems(inventory),
+                character,
+                hasShop,
+                CloneItems(shopInventory)
+            );
+        }
+        private static List<Item> CloneItems(List<Item> items)
+        {
+            var clonedItems = new List<Item>();
+
+            if (items == null)
+            {
+                return clonedItems;
+            }
+
+            foreach (Item item in items)
+            {
+                if(item == null)
+                {
+                    clonedItems.Add(null);
+                }
+                else
+                {
+                    clonedItems.Add(item.Clone());
+                }
+            }
+
+            return clonedItems;
+        }
     }
 }

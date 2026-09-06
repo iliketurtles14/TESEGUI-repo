@@ -57,7 +57,7 @@
             JanitorComboBox.FormattingEnabled = true;
             JanitorComboBox.Location = new Point(63, 6);
             JanitorComboBox.Name = "JanitorComboBox";
-            JanitorComboBox.Size = new Size(121, 23);
+            JanitorComboBox.Size = new Size(139, 23);
             JanitorComboBox.TabIndex = 0;
             // 
             // label1
@@ -155,7 +155,7 @@
             GardeningComboBox.FormattingEnabled = true;
             GardeningComboBox.Location = new Point(83, 33);
             GardeningComboBox.Name = "GardeningComboBox";
-            GardeningComboBox.Size = new Size(121, 23);
+            GardeningComboBox.Size = new Size(119, 23);
             GardeningComboBox.TabIndex = 11;
             // 
             // LaundryComboBox
@@ -163,7 +163,7 @@
             LaundryComboBox.FormattingEnabled = true;
             LaundryComboBox.Location = new Point(71, 60);
             LaundryComboBox.Name = "LaundryComboBox";
-            LaundryComboBox.Size = new Size(121, 23);
+            LaundryComboBox.Size = new Size(131, 23);
             LaundryComboBox.TabIndex = 12;
             // 
             // KitchenComboBox
@@ -171,7 +171,7 @@
             KitchenComboBox.FormattingEnabled = true;
             KitchenComboBox.Location = new Point(68, 87);
             KitchenComboBox.Name = "KitchenComboBox";
-            KitchenComboBox.Size = new Size(121, 23);
+            KitchenComboBox.Size = new Size(134, 23);
             KitchenComboBox.TabIndex = 13;
             // 
             // TailorshopComboBox
@@ -179,7 +179,7 @@
             TailorshopComboBox.FormattingEnabled = true;
             TailorshopComboBox.Location = new Point(83, 114);
             TailorshopComboBox.Name = "TailorshopComboBox";
-            TailorshopComboBox.Size = new Size(121, 23);
+            TailorshopComboBox.Size = new Size(119, 23);
             TailorshopComboBox.TabIndex = 14;
             // 
             // WoodshopComboBox
@@ -187,7 +187,7 @@
             WoodshopComboBox.FormattingEnabled = true;
             WoodshopComboBox.Location = new Point(86, 141);
             WoodshopComboBox.Name = "WoodshopComboBox";
-            WoodshopComboBox.Size = new Size(121, 23);
+            WoodshopComboBox.Size = new Size(116, 23);
             WoodshopComboBox.TabIndex = 15;
             // 
             // MetalshopComboBox
@@ -195,7 +195,7 @@
             MetalshopComboBox.FormattingEnabled = true;
             MetalshopComboBox.Location = new Point(84, 168);
             MetalshopComboBox.Name = "MetalshopComboBox";
-            MetalshopComboBox.Size = new Size(121, 23);
+            MetalshopComboBox.Size = new Size(118, 23);
             MetalshopComboBox.TabIndex = 16;
             // 
             // LibraryComboBox
@@ -203,7 +203,7 @@
             LibraryComboBox.FormattingEnabled = true;
             LibraryComboBox.Location = new Point(64, 195);
             LibraryComboBox.Name = "LibraryComboBox";
-            LibraryComboBox.Size = new Size(121, 23);
+            LibraryComboBox.Size = new Size(138, 23);
             LibraryComboBox.TabIndex = 17;
             // 
             // MailmanComboBox
@@ -211,7 +211,7 @@
             MailmanComboBox.FormattingEnabled = true;
             MailmanComboBox.Location = new Point(75, 222);
             MailmanComboBox.Name = "MailmanComboBox";
-            MailmanComboBox.Size = new Size(121, 23);
+            MailmanComboBox.Size = new Size(127, 23);
             MailmanComboBox.TabIndex = 18;
             // 
             // DeliveriesComboBox
@@ -219,7 +219,7 @@
             DeliveriesComboBox.FormattingEnabled = true;
             DeliveriesComboBox.Location = new Point(78, 249);
             DeliveriesComboBox.Name = "DeliveriesComboBox";
-            DeliveriesComboBox.Size = new Size(121, 23);
+            DeliveriesComboBox.Size = new Size(124, 23);
             DeliveriesComboBox.TabIndex = 19;
             // 
             // BackButton
@@ -231,6 +231,7 @@
             BackButton.TabIndex = 20;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // SaveButton
             // 
@@ -241,6 +242,7 @@
             SaveButton.TabIndex = 21;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // JobsForm
             // 
@@ -269,6 +271,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(JanitorComboBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "JobsForm";
             Text = "Edit Jobs";
